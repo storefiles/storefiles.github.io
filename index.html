@@ -1,6 +1,6 @@
 <pre id="gist-content"></pre>
 <script>
-fetch('https://gist.githubusercontent.com/storefiles/24bab0fa406a1fc69a7ecf459b641729/raw')
+fetch('https://gist.githubusercontent.com/storefiles/' + window.location.href.split('?')[1] + '/raw/')
 .then(response => response.text())
 .then(data => {
   document.getElementById('gist-content').innerText = data;
